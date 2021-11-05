@@ -38,7 +38,8 @@ class ProfileFragment : Fragment() {
 
         val certificateAdapter = CertificatesAdapter()
         binding.profileRcCertificates.adapter = certificateAdapter
-        binding.profileRcCertificates.layoutManager = LinearLayoutManager(requireContext(),LinearLayoutManager.HORIZONTAL,false)
+        binding.profileRcCertificates.layoutManager =
+            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
 
 
         viewModel.getServices()
@@ -57,15 +58,19 @@ class ProfileFragment : Fragment() {
 
         viewModel.certificatesLiveData.observe(viewLifecycleOwner,{
             val certificate = mutableListOf<AppImage>()
-            certificate.addAll(it)
-            certificateAdapter.submitList(certificate)
-        })
+
 
         serviceAdapter.onServiceListener = object : OnRecyclerItemClick{
             override fun onClick(item: Any) {
                 item as LabService
-                Toast.makeText(context, "${item.nameAr}", Toast.LENGTH_SHORT).show()
             }
+        }
+        certificateAdapter.onClickImage = object : OnClickImageListener {
+            override fun onImageClick(item: Any) {
+                item as Certificate
+                Toast.makeText(context, "${item.image}", Toast.LENGTH_SHORT).show()
+            }
+
         }
     }
 
