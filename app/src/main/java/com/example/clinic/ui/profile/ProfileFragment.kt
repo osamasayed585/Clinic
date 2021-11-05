@@ -15,6 +15,7 @@ import com.example.clinic.adapter.CertificatesAdapter
 import com.example.clinic.databinding.FragmentProfileBinding
 import com.example.clinic.model.data_class.Certificate
 import com.example.clinic.model.data_class.Service
+import com.example.clinic.util.OnClickImageListener
 import com.example.clinic.util.OnClickServiceListener
 
 class ProfileFragment : Fragment() {
@@ -39,7 +40,8 @@ class ProfileFragment : Fragment() {
 
         val certificateAdapter = CertificatesAdapter()
         binding.profileRcCertificates.adapter = certificateAdapter
-        binding.profileRcCertificates.layoutManager = LinearLayoutManager(requireContext(),LinearLayoutManager.HORIZONTAL,false)
+        binding.profileRcCertificates.layoutManager =
+            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
 
 
         viewModel.getServices()
@@ -56,21 +58,28 @@ class ProfileFragment : Fragment() {
             serviceAdapter.submitList(service)
         })
 
-        viewModel.certificatesLiveData.observe(viewLifecycleOwner,{
+        viewModel.certificatesLiveData.observe(viewLifecycleOwner, {
             val certificate = mutableListOf<Certificate>()
             certificate.addAll(it)
             certificateAdapter.submitList(certificate)
         })
 
-        serviceAdapter.onServiceListener = object : OnClickServiceListener{
+        serviceAdapter.onServiceListener = object : OnClickServiceListener {
             override fun onServiceClick(item: Any) {
                 item as Service
                 Toast.makeText(context, "${item.nameAr}", Toast.LENGTH_SHORT).show()
             }
         }
+        certificateAdapter.onClickImage = object : OnClickImageListener {
+            override fun onImageClick(item: Any) {
+                item as Certificate
+                Toast.makeText(context, "${item.image}", Toast.LENGTH_SHORT).show()
+            }
+
+        }
     }
 
-    fun initProgressBar(status: Boolean) {
+    private fun initProgressBar(status: Boolean) {
         binding.profileProgressBar.isVisible = status
     }
 
