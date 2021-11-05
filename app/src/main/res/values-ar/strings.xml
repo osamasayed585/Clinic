@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">clinic</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email: </string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="locationBio">" This address for Home visit so, please click here to provide a map location"</string>
+    <string name="main_info">Main Info</string>
+    <string name="location">Location</string>
+    <string name="about">About</string>
+    <string name="aboutbio">حاصل علي زمالة من الجامعه البريطانيه الملكية زميل الجامعة الملكية</string>
+    <string name="certificates">Certificates</string>
+    <string name="pricing">Pricing</string>
+    <string name="phone_call_price">Phone call price</string>
+    <string name="immediately_phone_call_price">Immediately phone call price</string>
+    <string name="clinic_price">Clinic price</string>
+    <string name="follow_up_price">Follow Up price</string>
+    <string name="at_home_price">At Home price</string>
+    <string name="add_service">Add Service</string>
+</resources>
