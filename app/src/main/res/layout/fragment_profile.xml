@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.183" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/profile_image"
         android:layout_width="@dimen/_96sdp"
         android:layout_height="@dimen/_96sdp"
@@ -55,7 +55,7 @@
         android:layout_marginStart="@dimen/_8sdp"
         android:layout_marginTop="@dimen/_22sdp"
         android:singleLine="true"
-        android:text="Osama test clinic"
+        android:text="Osama test lap"
         android:textColor="@color/white"
         android:textSize="@dimen/_16ssp"
         app:layout_constraintStart_toEndOf="@+id/Profile_change_image"
@@ -126,6 +126,10 @@
                 android:layout_margin="@dimen/_10sdp"
                 android:background="@drawable/shape_layout_profile"
                 android:orientation="vertical"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/profile_image">
@@ -133,26 +137,16 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginEnd="@dimen/_10sdp"
                     android:text="@string/main_info"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_16sdp" />
-
-                <View
-                    android:layout_width="@dimen/_66sdp"
-                    android:layout_height="2dp"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_1sdp"
-                    android:background="@drawable/text_line" />
+                    android:textSize="@dimen/_14ssp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_8sdp"
-                    android:layout_marginEnd="@dimen/_20sdp"
-                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -160,7 +154,9 @@
                         android:layout_height="wrap_content"
                         android:text="@string/email"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/_16ssp" />
+                        android:textSize="@dimen/_14ssp"
+
+                        />
 
                     <TextView
                         android:id="@+id/profile_phone"
@@ -177,10 +173,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_8sdp"
-                    android:layout_marginEnd="@dimen/_20sdp"
-                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -188,7 +183,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/phone"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/_16ssp" />
+                        android:textSize="@dimen/_14ssp" />
 
                     <TextView
                         android:id="@+id/profile_email"
@@ -205,10 +200,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_8sdp"
-                    android:layout_marginEnd="@dimen/_20sdp"
-                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -216,7 +210,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/address"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/_16ssp" />
+                        android:textSize="@dimen/_14ssp" />
 
                     <TextView
                         android:id="@+id/profile_address"
@@ -234,9 +228,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_8sdp"
-                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
                     android:layout_marginBottom="@dimen/_2sdp"
                     android:orientation="horizontal">
 
@@ -245,7 +239,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/location"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/_16ssp" />
+                        android:textSize="@dimen/_14ssp" />
 
                     <TextView
                         android:id="@+id/profile_location"
@@ -262,9 +256,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_8sdp"
-                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
                     android:layout_marginBottom="@dimen/_8sdp"
                     android:orientation="horizontal">
 
@@ -273,7 +267,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/about"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/_16ssp" />
+                        android:textSize="@dimen/_14ssp" />
 
                     <TextView
                         android:id="@+id/profile_about"
@@ -296,25 +290,21 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_10sdp"
                 android:background="@drawable/shape_layout_profile"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp">
 
                 <TextView
                     android:id="@+id/text_add_certificates"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginEnd="@dimen/_10sdp"
                     android:text="@string/certificates"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_14sdp" />
 
-                <View
-                    android:layout_width="@dimen/_80sdp"
-                    android:layout_height="2dp"
-                    android:layout_below="@id/text_add_certificates"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_1sdp"
-                    android:background="@drawable/text_line" />
 
                 <ImageButton
                     android:id="@+id/profile_btn_add_certificates"
@@ -329,21 +319,16 @@
                     android:src="@drawable/ic_baseline_add_24"
                     tools:ignore="ContentDescription" />
 
-                <LinearLayout
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/profile_rc_certificates"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/_95sdp"
                     android:layout_below="@id/text_add_certificates"
-                    android:layout_marginStart="@dimen/_8sdp"
                     android:layout_marginTop="@dimen/_8sdp"
-                    android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_marginBottom="@dimen/_8sdp"
-                    android:orientation="horizontal">
-
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/profile_rc_certificates"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
-                </LinearLayout>
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/row_certificate_item" />
 
             </RelativeLayout>
 
@@ -353,70 +338,76 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_10sdp"
                 android:background="@drawable/shape_layout_profile"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingEnd="@dimen/_12sdp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginEnd="@dimen/_10sdp"
                     android:text="@string/pricing"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_14sdp" />
 
-                <View
-                    android:layout_width="@dimen/_48sdp"
-                    android:layout_height="2dp"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_1sdp"
-                    android:background="@drawable/text_line" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_8sdp"
                     android:layout_marginTop="@dimen/_8sdp"
-                    android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_marginBottom="@dimen/_8sdp"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:layout_marginEnd="@dimen/_10sdp"
-                        android:text="Go to the home?"
+                        android:text="@string/go_to_the_home"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/_14sdp" />
+                        android:textSize="@dimen/_12sdp" />
 
-                    <Switch
+                    <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/profile_switch_home"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:layout_marginEnd="@dimen/_10sdp"
-                        android:checked="false"
-                        tools:ignore="UseSwitchCompatOrMaterialXml" />
+                        android:checked="false" />
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/TextInputLayout_price"
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/costLayOut"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/profile_switch_home"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:layout_marginTop="@dimen/_8sdp"
-                        android:layout_marginEnd="@dimen/_10sdp"
-                        android:background="@color/white">
+                        android:layout_below="@id/profile_switch_home">
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/profile_at_home_price"
+                        <TextView
+                            android:id="@+id/costMessage"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/at_home_message"
+                            android:textSize="@dimen/_12ssp"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/TextInputLayout_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
                             android:background="@color/white"
-                            android:hint="What is the service price?"
-                            android:inputType="numberDecimal" />
-                    </com.google.android.material.textfield.TextInputLayout>
+                            app:layout_constraintTop_toBottomOf="@id/costMessage">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/profile_at_home_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:hint="@string/amount"
+                                android:inputType="numberDecimal" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
                 </RelativeLayout>
 
@@ -428,40 +419,33 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_10sdp"
                 android:background="@drawable/shape_layout_profile"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_20sdp">
 
                 <TextView
                     android:id="@+id/text_add_service"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginEnd="@dimen/_10sdp"
                     android:text="@string/add_service"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_14sdp" />
 
-                <View
-                    android:layout_width="@dimen/_86sdp"
-                    android:layout_height="2dp"
-                    android:layout_below="@id/text_add_service"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_1sdp"
-                    android:background="@drawable/text_line" />
 
                 <ImageButton
                     android:id="@+id/profile_btn_add_service"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_4sdp"
-                    android:layout_marginEnd="@dimen/_10sdp"
                     android:background="@color/white"
                     android:scaleType="centerCrop"
                     android:src="@drawable/ic_baseline_add_24"
                     tools:ignore="ContentDescription" />
 
-                <LinearLayout
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/profile_rc_add_service"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/text_add_service"
@@ -469,15 +453,8 @@
                     android:layout_marginTop="@dimen/_8sdp"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:layout_marginBottom="@dimen/_8sdp"
-                    android:orientation="horizontal">
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/profile_rc_add_service"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
-
-                </LinearLayout>
 
             </RelativeLayout>
 
