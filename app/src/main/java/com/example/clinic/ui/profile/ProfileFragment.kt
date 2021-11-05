@@ -19,7 +19,7 @@ import com.example.clinic.util.OnRecyclerItemClick
 class ProfileFragment : Fragment() {
 
     private lateinit var binding: FragmentProfileBinding
-    lateinit var viewModel: ProfileViewModel
+    private lateinit var viewModel: ProfileViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -66,6 +66,7 @@ class ProfileFragment : Fragment() {
             override fun onClick(item: Any) {
                 item as LabService
                 Toast.makeText(context, "${item.nameAr}", Toast.LENGTH_SHORT).show()
+        
             }
 
         }
