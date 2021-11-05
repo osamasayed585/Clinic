@@ -56,25 +56,23 @@ class ProfileFragment : Fragment() {
             serviceAdapter.submitList(service)
         })
 
-        viewModel.certificatesLiveData.observe(viewLifecycleOwner,{
+        viewModel.certificatesLiveData.observe(viewLifecycleOwner, {
             val certificate = mutableListOf<AppImage>()
+            certificate.addAll(it)
+            certificateAdapter.submitList(certificate)
+        })
 
-
-        serviceAdapter.onServiceListener = object : OnRecyclerItemClick{
+        serviceAdapter.onServiceListener = object : OnRecyclerItemClick {
             override fun onClick(item: Any) {
                 item as LabService
-            }
-        }
-        certificateAdapter.onClickImage = object : OnClickImageListener {
-            override fun onImageClick(item: Any) {
-                item as Certificate
-                Toast.makeText(context, "${item.image}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "${item.nameAr}", Toast.LENGTH_SHORT).show()
+        
             }
 
         }
     }
 
-    private fun initProgressBar(status: Boolean) {
+    fun initProgressBar(status: Boolean) {
         binding.profileProgressBar.isVisible = status
     }
 
