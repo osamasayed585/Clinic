@@ -6,17 +6,16 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.clinic.databinding.RowCertificateItemBinding
-import com.example.clinic.model.data_class.Certificate
+import com.example.clinic.model.data_class.AppImage
 import com.example.clinic.util.call_back.CertificatesItemDiffCallback
-import com.example.clinic.util.OnClickDeleteImageListener
-import com.example.clinic.util.OnClickImageListener
+import com.example.clinic.util.OnRecyclerItemClick
 import com.squareup.picasso.Picasso
 
-class CertificatesAdapter: ListAdapter<Certificate, CertificatesAdapter.CertificatesHolder>(
+class CertificatesAdapter: ListAdapter<AppImage, CertificatesAdapter.CertificatesHolder>(
     CertificatesItemDiffCallback()
 ) {
 
-    private var certificate: List<Certificate>? = null
+    private var certificate: List<AppImage>? = null
 
     class CertificatesHolder(val bind: RowCertificateItemBinding) : RecyclerView.ViewHolder(bind.root)
 
@@ -30,20 +29,20 @@ class CertificatesAdapter: ListAdapter<Certificate, CertificatesAdapter.Certific
       )
     }
 
-    lateinit var onClickImage: OnClickImageListener
-    lateinit var onClickDelete: OnClickDeleteImageListener
+    lateinit var onClickImage: OnRecyclerItemClick
+    lateinit var onClickDelete: OnRecyclerItemClick
 
     override fun onBindViewHolder(holder: CertificatesHolder, position: Int) {
         val item = getItem(position)
         val bind = holder.bind
 
-        Picasso.get().load(item.image)
+        Picasso.get().load(item.photo)
             .centerCrop()
             .fit()
             .into(bind.itemCertificateImage)
 
         bind.itemCertificateImage.setOnClickListener {
-            onClickImage.onImageClick(item)
+            onClickImage.onClick(item)
         }
     }
 }

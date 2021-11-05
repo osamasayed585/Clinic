@@ -18,4 +18,7 @@
     <string name="follow_up_price">Follow Up price</string>
     <string name="at_home_price">At Home price</string>
     <string name="add_service">Add Service</string>
+    <string name="go_to_the_home">Go to the home?</string>
+    <string name="amount">amount</string>
+    <string name="at_home_message">Please, add the value that will be added to the service cost in case the service is at home</string>
 </resources>
