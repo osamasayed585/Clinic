@@ -21,4 +21,6 @@
     <string name="go_to_the_home">Go to the home?</string>
     <string name="amount">amount</string>
     <string name="at_home_message">Please, add the value that will be added to the service cost in case the service is at home</string>
+    <string name="text_message">Here, you will find all your history, default is last closed 10 tickets and can filter data</string>
+    <string name="text_message2">Clinic Appointments</string>
 </resources>

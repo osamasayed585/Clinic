@@ -3,11 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_graph"
-    app:startDestination="@id/profileFragment">
+    app:startDestination="@id/ticketFragment">
 
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.clinic.ui.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/ticketFragment"
+        android:name="com.example.clinic.lab_ticket.ui.TicketFragment"
+        android:label="fragment_ticket"
+        tools:layout="@layout/fragment_ticket" />
+    <fragment
+        android:id="@+id/closedTicketFragment"
+        android:name="com.example.clinic.ClosedTicketFragment"
+        android:label="fragment_closed_ticket"
+        tools:layout="@layout/fragment_closed_ticket" />
+    <fragment
+        android:id="@+id/openTicketFragment"
+        android:name="com.example.clinic.OpenTicketFragment"
+        android:label="fragment_open_ticket"
+        tools:layout="@layout/fragment_open_ticket" />
+    <fragment
+        android:id="@+id/inquiryFragment"
+        android:name="com.example.clinic.InquiryFragment"
+        android:label="fragment_inquiry"
+        tools:layout="@layout/fragment_inquiry" />
 </navigation>
