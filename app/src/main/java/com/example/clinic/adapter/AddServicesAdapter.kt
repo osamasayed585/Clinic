@@ -11,7 +11,7 @@ import com.example.clinic.model.data_class.LabService
 import com.example.clinic.util.OnRecyclerItemClick
 import com.example.clinic.util.call_back.ServiceItemDiffCallback
 
-class AddServicesAdapter: ListAdapter<LabService, AddServicesAdapter.ServiceHolder>(
+class AddServicesAdapter : ListAdapter<LabService, AddServicesAdapter.ServiceHolder>(
     ServiceItemDiffCallback()
 ) {
 
@@ -20,14 +20,15 @@ class AddServicesAdapter: ListAdapter<LabService, AddServicesAdapter.ServiceHold
     class ServiceHolder(val bind: RowServiceItemBinding) : RecyclerView.ViewHolder(bind.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ServiceHolder {
-      return ServiceHolder(
-          RowServiceItemBinding.inflate(
-              LayoutInflater.from(parent.context),
-              parent,
-              false
-          )
-      )
+        return ServiceHolder(
+            RowServiceItemBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent,
+                false
+            )
+        )
     }
+
     lateinit var onServiceListener: OnRecyclerItemClick
 
     override fun onBindViewHolder(holder: ServiceHolder, position: Int) {
@@ -42,7 +43,7 @@ class AddServicesAdapter: ListAdapter<LabService, AddServicesAdapter.ServiceHold
         bind.itemService.setOnClickListener {
             onServiceListener.onClick(service)
         }
-        if (!bind.itemServiceHomeVisits.isChecked){
+        if (!bind.itemServiceHomeVisits.isChecked) {
             bind.itemServiceAtHomePrice.isVisible = false
             bind.textAtHomePrice.isVisible = false
         }
