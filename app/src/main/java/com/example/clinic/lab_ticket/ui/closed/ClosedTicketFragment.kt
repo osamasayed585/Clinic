@@ -1,4 +1,4 @@
-package com.example.clinic.lab_ticket.ui
+package com.example.clinic.lab_ticket.ui.closed
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

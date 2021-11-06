@@ -57,6 +57,7 @@
     <color name="red">#FD0101</color>
     <color name="color_toast_ticket">#192754</color>
     <color name="color_tab_ticket">#26B7EE</color>
+    <color name="color_floating_ticket">#E0DCDB</color>
 
 
 </resources>
