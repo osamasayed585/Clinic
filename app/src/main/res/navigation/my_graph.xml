@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/ticketFragment"
-        android:name="com.example.clinic.lab_ticket.ui.TicketFragment"
+        android:name="com.example.clinic.lab_ticket.ui.main.TicketFragment"
         android:label="fragment_ticket"
         tools:layout="@layout/fragment_ticket" />
     <fragment

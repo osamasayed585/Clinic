@@ -1,4 +1,4 @@
-package com.example.clinic.lab_ticket.ui
+package com.example.clinic.lab_ticket.ui.main
 
 import android.content.Context
 import android.graphics.drawable.StateListDrawable
@@ -12,6 +12,9 @@ import androidx.core.view.ViewCompat
 import com.example.clinic.R
 import com.example.clinic.databinding.FragmentTicketBinding
 import com.example.clinic.lab_ticket.ui.adapter.PagerAdapter
+import com.example.clinic.lab_ticket.ui.closed.ClosedTicketFragment
+import com.example.clinic.lab_ticket.ui.inquiry.InquiryFragment
+import com.example.clinic.lab_ticket.ui.open.OpenTicketFragment
 import com.google.android.material.tabs.TabLayoutMediator
 
 

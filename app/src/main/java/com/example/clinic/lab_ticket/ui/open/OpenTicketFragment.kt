@@ -1,4 +1,4 @@
-package com.example.clinic.lab_ticket.ui
+package com.example.clinic.lab_ticket.ui.open
 
 import android.content.Intent
 import android.os.Bundle
