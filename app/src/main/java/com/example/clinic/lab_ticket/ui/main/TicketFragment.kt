@@ -36,7 +36,7 @@ class TicketFragment : Fragment() {
     }
 
     private fun setUpTabs() {
-        val fragments = listOf(ClosedTicketFragment(), OpenTicketFragment(), InquiryFragment())
+        val fragments = listOf( OpenTicketFragment(), ClosedTicketFragment(), InquiryFragment())
         binding.vpHome.adapter = PagerAdapter(this, fragments)
 
         TabLayoutMediator(binding.tabLayoutHome, binding.vpHome) { tab, position ->

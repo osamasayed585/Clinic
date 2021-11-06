@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ClosedTicketItem"
+    android:layout_width="match_parent"
+    android:background="@color/profile_color"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:background="@drawable/shape_layout_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        >
+
+        <TextView
+            android:id="@+id/component_ticketId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:text="@string/ticket_id"
+            android:textColor="@color/grey_600"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:id="@+id/ClosedItem_TicketId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:layout_toEndOf="@id/component_ticketId"
+            android:textColor="@color/grey_600"
+            android:textSize="@dimen/_12ssp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ClosedItem_Image"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_below="@id/component_ticketId"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:background="@drawable/img" />
+
+        <TextView
+            android:id="@+id/ClosedItem_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_toEndOf="@id/ClosedItem_Image"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/ClosedItem_Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ClosedItem_Name"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_toEndOf="@id/ClosedItem_Image"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/ClosedItem_Data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ClosedItem_Address"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_toEndOf="@id/ClosedItem_Image"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp" />
+
+        <ImageView
+            android:id="@+id/ClosedItem_visa"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/ClosedItem_Image"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_visa_card"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+
+
+        <ImageView
+            android:id="@+id/ClosedItem_cash"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/ClosedItem_Image"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_cash"
+            android:visibility="visible"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/ClosedItem_Amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ClosedItem_Image"
+            android:layout_marginStart="@dimen/_70sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:scaleType="centerCrop"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp" />
+
+        <ImageView
+            android:id="@+id/component_calender"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/ClosedItem_Image"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_toStartOf="@id/ClosedItem_Type"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_calendar"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/ClosedItem_Type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ClosedItem_Image"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:scaleType="centerCrop"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/ClosedItem_providerBrief"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ClosedItem_Amount"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

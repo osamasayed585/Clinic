@@ -41,7 +41,7 @@ object TicketData {
             cash = true,
             amount = 300.00,
             type = "anything",
-            providerBrief = "anyOne"
+            providerBrief = "تجربة جديدة لاشعار المستخدم بإنهاء الجلسة"
         ),
         LabTicket(
             ticketId = 2,
@@ -52,7 +52,7 @@ object TicketData {
             cash = false,
             amount = 400.00,
             type = "Female",
-            providerBrief = "provider test"
+            providerBrief = "تجربة جديدة لاشعار المستخدم بإنهاء الجلسة"
         ),
         LabTicket(
             ticketId = 3,
@@ -63,7 +63,7 @@ object TicketData {
             cash = true,
             amount = 700.00,
             type = "Female",
-            providerBrief = "provider test three"
+            providerBrief = "تجربة جديدة لاشعار المستخدم بإنهاء الجلسة"
         ),
         LabTicket(
             ticketId = 4,
@@ -74,7 +74,7 @@ object TicketData {
             cash = false,
             amount = 100.00,
             type = "Male",
-            providerBrief = "provider test Four"
+            providerBrief = "تجربة جديدة لاشعار المستخدم بإنهاء الجلسة"
         ),
         LabTicket(
             ticketId = 5,
@@ -85,7 +85,7 @@ object TicketData {
             cash = true,
             amount = 280.00,
             type = "Male",
-            providerBrief = "provider test Five"
+            providerBrief = "تجربة جديدة لاشعار المستخدم بإنهاء الجلسة"
         ),
     )
 
