@@ -55,6 +55,8 @@
     <color name="blue">#001AFF</color>
     <color name="gold">#FDC50A</color>
     <color name="red">#FD0101</color>
+    <color name="color_toast_ticket">#192754</color>
+    <color name="color_tab_ticket">#26B7EE</color>
 
 
 </resources>
